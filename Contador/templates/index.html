@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador de visitas</title>
+</head>
+<body>
+    <h1>Contador de visitas</h1>
+    <p>Has visitado esta página {{ visits }} veces.</p>
+    <form action="/increment" method="post">
+        <label for="increment_value">Incrementar contador por:</label>
+        <input type="number" id="increment_value" name="increment_value" required>
+        <input type="submit" value="Incrementar">
+    </form>
+    <a href="/destroy_session">Destruir Sesión</a>
+    <a href="/increment_by_2">Incrementar por 2</a>
+    <a href="/reset_counter">Reiniciar Contador</a>
+</body>
+</html>
